@@ -39,8 +39,7 @@ def square(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
-    pass  # TODO
-
+    pass
 
 def rectangle(start, end):
     "Draw rectangle from start to end."
@@ -49,7 +48,14 @@ def rectangle(start, end):
 
 def triangle(start, end):
     "Draw triangle from start to end."
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+    
+    for i in range(3):
+      flecha.forward(100)
+      flecha.left(120)
 
 
 def tap(x, y):
